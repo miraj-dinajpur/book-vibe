@@ -27,7 +27,7 @@ const Books = async () => {
           </p>
 
           <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-            Explore Our Books
+            Explore Popular Books 
           </h2>
 
           <p className="mt-3 max-w-xl text-sm leading-6 text-slate-500 sm:text-base">
@@ -42,8 +42,8 @@ const Books = async () => {
       </div>
 
       {/* Book cards */}
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {booksData.map((book: Ibook) => (
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        {booksData.slice(0, 6).map((book: Ibook) => (
           <BookCard key={book.bookId} book={book} />
         ))}
       </div>
