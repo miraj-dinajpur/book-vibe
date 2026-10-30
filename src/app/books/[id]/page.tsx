@@ -1,3 +1,4 @@
+import Readbutton from "@/components/bookdetails/Readbutton";
 import { Ibook } from "@/types/books.type";
 import Image from "next/image";
 
@@ -113,12 +114,7 @@ const BookDetailPage = async ({ params }: IBookDetailPageProps) => {
           </div>
 
           <div className="mt-1 flex flex-wrap gap-3">
-            <button
-              type="button"
-              className="rounded-lg border border-neutral-300 px-6 py-2.5 text-sm font-semibold text-neutral-900 transition-colors hover:bg-neutral-100"
-            >
-              Read
-            </button>
+            <Readbutton book={book} />
 
             <button
               type="button"
