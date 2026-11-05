@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useContext } from "react";
-import Ibook from "@/types/books.type";
+import {Ibook} from "@/types/books.type";
 import { BooksContext } from "@/context/BooksContext";
 import { toast } from "react-toastify";
 

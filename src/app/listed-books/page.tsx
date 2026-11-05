@@ -8,7 +8,7 @@ import BookCard from "@/components/shared/BookCard";
 import Image from "next/image";
 import Link from "next/link";
 
-const page = () => {
+const ListedBooksPage = () => {
   const { readBooks, wishlist } = useContext(BooksContext);
     const [sortby, setSortby] = useState<"rating" | "pages" | "year">("rating");
 
@@ -234,4 +234,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ListedBooksPage;
